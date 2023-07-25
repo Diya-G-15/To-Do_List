@@ -1,0 +1,145 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0cefc;
+}
+
+.container {
+    max-width: 1000px; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eab8f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(1, 1, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #383232;
+    font-size: 50px; 
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    padding: 15px; 
+    width: 70%;
+    border: 2px solid #d6a3f6;
+    border-radius: 9px 0 0 9px;
+    font-size: 18px; 
+}
+
+form button {
+    padding: 15px 20px; 
+    background-color: #934caf;
+    color: #fff;
+    border: 2px solid #a43be9;
+    border-radius: 0 9px 9px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.task-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pending-tasks,
+.completed-tasks {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #e4b0fd;
+    min-width: 220px;
+}
+
+.pending-tasks h2,
+.completed-tasks h2 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #747171;
+    color: #333;
+    font-size: 24px; 
+}
+
+ul {
+    list-style: none;
+    padding: 2px;
+    margin: 10px 0;
+}
+
+li {
+    margin: 5px 5px;
+    padding: 15px; 
+    border-radius: 5px;
+    background-color: #d9aff5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    transition: background-color 0.3s ease; 
+}
+
+li:hover {
+    background-color: #94aaee; 
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    padding: 10px 15px; 
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-size: 16px; 
+}
+
+li button:hover {
+    background-color: #a3a2a3;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 10px; 
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+
+    form input[type="text"] {
+        padding: 12px; 
+        font-size: 16px; 
+    }
+
+    form button {
+        padding: 12px 18px; 
+    }
+
+    .pending-tasks,
+    .completed-tasks {
+        margin: 10px 1px;
+        min-width: 100%; 
+    }
+
+    .task-section {
+        justify-content: center; 
+    }
+}
+
